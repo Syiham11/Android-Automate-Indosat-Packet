@@ -1,0 +1,110 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#009688"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_status_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Status Paket"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_status_paket_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Tidak Aktif"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_regis_ulang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_status_paket"
+                android:layout_marginLeft="30dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Tanggal registrasi ulang"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_regis_ulang_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_status_paket"
+                android:layout_marginRight="30dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Kosong"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_regis_ulang"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:linksClickable="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Atur Registrasi Ulang"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:text="START"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            app:fabSize="normal" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
